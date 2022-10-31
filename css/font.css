@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "addmeeting"; /* Project id 2636827 */
+    src: url('//at.alicdn.com/t/c/font_2636827_w35h9vgq72h.woff2?t=1667206380532') format('woff2'),
+         url('//at.alicdn.com/t/c/font_2636827_w35h9vgq72h.woff?t=1667206380532') format('woff'),
+         url('//at.alicdn.com/t/c/font_2636827_w35h9vgq72h.ttf?t=1667206380532') format('truetype');
+  }
+  
+  .addmeeting {
+    font-family: "addmeeting" !important;
+    font-size: 19px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-meetingyinlemusic215:before {
+    content: "\e9c5";
+  }
+  
+  .icon-meetingswticonyinle2:before {
+    content: "\e614";
+  }
+  
+  .icon-meetingyinlegedanyinfu:before {
+    content: "\e72f";
+  }
+  
+  .icon-meetingyinle2:before {
+    content: "\e607";
+  }
+  
+  .icon-meetingyinle3:before {
+    content: "\e61b";
+  }
+  
+  .icon-meetingyinle:before {
+    content: "\e888";
+  }
+  
