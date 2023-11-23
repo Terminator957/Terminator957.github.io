@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>React start | Xiuji957</title><meta name="author" content="Xiuji957"><meta name="copyright" content="Xiuji957"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content=".ps {     color:red;     font-size:22px;     font-weight:700;   }     .card {     padding: 0.5em 1em;     margin: 12px 0;     border-top-left-radius: 4px;     border-bottom-left-radius: 4px;     bo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React start">
+<meta property="og:url" content="https://www.xiuji957.cn/2023/11/22/react/index.html">
+<meta property="og:site_name" content="Xiuji957">
+<meta property="og:description" content=".ps {     color:red;     font-size:22px;     font-weight:700;   }     .card {     padding: 0.5em 1em;     margin: 12px 0;     border-top-left-radius: 4px;     border-bottom-left-radius: 4px;     bo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg">
+<meta property="article:published_time" content="2023-11-22T07:10:52.000Z">
+<meta property="article:modified_time" content="2023-11-23T08:45:11.061Z">
+<meta property="article:author" content="Xiuji957">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.xiuji957.cn/2023/11/22/react/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Xiuji957","link":"链接: ","source":"来源: Xiuji957","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'React start',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-23 16:45:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style_v1.css?v1"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/css/function.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/dog.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">62</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://bu.dusays.com/2023/11/22/655dabe2e64ac.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Xiuji957</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">React start</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon fas fa-history"></i><span class="post-meta-label">更新于</span><time datetime="2023-11-23T08:45:11.061Z" title="更新于 2023-11-23 16:45:11">2023-11-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/React/">React</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="React start"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><style>
+  .ps {
+    color:red;
+    font-size:22px;
+    font-weight:700;
+  }  
+  .card {
+    padding: 0.5em 1em;
+    margin: 12px 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: 4px solid #a862ea;
+    background-color: #f8f5ff;
+    color: #383838;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-break: break-word;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  }
+</style>
+
+<h1 id="第一个React程序"><a href="#第一个React程序" class="headerlink" title="第一个React程序"></a>第一个React程序</h1><h2 id="确保有合适的环境"><a href="#确保有合适的环境" class="headerlink" title="确保有合适的环境"></a>确保有合适的环境</h2><p>确保设备上已经安装了Node.js和npm。你可以在终端运行以下命令来检查它们是否已安装：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>如果还没有安装Node.js，请前往<a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js官网</a>下载并安装。</p>
+<h2 id="创建React应用"><a href="#创建React应用" class="headerlink" title="创建React应用"></a>创建React应用</h2><p>打开终端，运行以下命令来创建一个新的React项目：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx create-react-app my-react-app</span><br></pre></td></tr></table></figure>
+
+<p>这里，<code>my-react-app</code>是你的项目名称，你可以将其更换为你喜欢的名称。<code>npx</code>是一个npm 5.2+附带的包运行工具，它可以运行Registry中的包而不需要全局安装它们。</p>
+<p>创建成功后进入项目目录<code>my-react-app</code>下，项目默认结构如下：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">├── README.md</span><br><span class="line">├── node_modules</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── package.json</span><br><span class="line">├── public</span><br><span class="line">└── src</span><br></pre></td></tr></table></figure>
+
+<p>此时可以通过以下命令启动本地开发服务器：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm run start</span><br><span class="line"></span><br><span class="line">yarn start // 官方文档推荐使用yarn对react项目进行包管理及项目脚本的执行</span><br></pre></td></tr></table></figure>
+
+<p>这将自动打开你的默认浏览器并加载 <code>http://localhost:3000</code>。当你修改项目文件时，应用将会热重载，你可以实时看到更改。</p>
+<h2 id="构建生产环境应用"><a href="#构建生产环境应用" class="headerlink" title="构建生产环境应用"></a>构建生产环境应用</h2><p>当你准备好将应用发布到生产环境时，你可以使用以下命令构建你的应用：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn build</span><br></pre></td></tr></table></figure>
+
+<p>这将创建一个 <code>build</code> 目录，里面包含了用于生产环境的文件，这些文件已经过优化，可以部署到你的服务器上。</p>
+<h1 id="自定义配置Webpack"><a href="#自定义配置Webpack" class="headerlink" title="自定义配置Webpack"></a>自定义配置Webpack</h1><h2 id="默认package-json"><a href="#默认package-json" class="headerlink" title="默认package.json"></a>默认package.json</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;my-react-app&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;private&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@testing-library/jest-dom&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^5.17.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@testing-library/react&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^13.4.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@testing-library/user-event&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^13.5.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;react&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^18.2.0&quot;</span><span class="punctuation">,</span> <span class="comment">// 项目所必须依赖</span></span><br><span class="line">    <span class="attr">&quot;react-dom&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^18.2.0&quot;</span><span class="punctuation">,</span> <span class="comment">// 项目所必须依赖</span></span><br><span class="line">    <span class="attr">&quot;react-scripts&quot;</span><span class="punctuation">:</span> <span class="string">&quot;5.0.1&quot;</span><span class="punctuation">,</span> <span class="comment">// react封装了一套默认的构建配置，包括 Webpack、Babel、ESLint 等</span></span><br><span class="line">    <span class="attr">&quot;web-vitals&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.1.4&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;start&quot;</span><span class="punctuation">:</span> <span class="string">&quot;react-scripts start&quot;</span><span class="punctuation">,</span> <span class="comment">// 启动开发服务器</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;react-scripts build&quot;</span><span class="punctuation">,</span> <span class="comment">// 构建生产应用</span></span><br><span class="line">    <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;react-scripts test&quot;</span><span class="punctuation">,</span> <span class="comment">// 单元测试</span></span><br><span class="line">    <span class="attr">&quot;eject&quot;</span><span class="punctuation">:</span> <span class="string">&quot;react-scripts eject&quot;</span> <span class="comment">// 暴露项目所有的配置和构建依赖</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;eslintConfig&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;extends&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;react-app&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;react-app/jest&quot;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;browserslist&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;production&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;&gt;0.2%&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;not dead&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;not op_mini all&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;development&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;last 1 chrome version&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;last 1 firefox version&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;last 1 safari version&quot;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>默认的<code>package.json</code>看起来十分简洁，因为react帮我们将项目一些必须配置封装进react-scripts中，实际项目会有各种定制化需求、性能优化等，此时可以通过 <code>yarn eject</code> 暴露项目所有的配置和构建依赖，执行 <code>yarn eject</code> 后，所有的配置文件和构建依赖都会移到你的项目中。但这是一个单向操作，一旦 “eject”，就不能回去了。<strong>所以在此之前，需要使用git等工具保存一下代码版本</strong></p>
+<p>暴露配置后目录结构：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">├── README.md                      # 项目说明文件，一般包含项目信息、构建过程和使用说明</span><br><span class="line">├── config                         # 存放与项目构建相关的配置文件</span><br><span class="line">│   ├── env.js                     # 环境变量相关的配置</span><br><span class="line">│   ├── getHttpsConfig.js          # HTTPS本地开发服务器相关配置</span><br><span class="line">│   ├── jest                       # Jest测试框架的配置文件</span><br><span class="line">│   │   ├── babelTransform.js      # Jest中Babel转换配置</span><br><span class="line">│   │   ├── cssTransform.js        # Jest中CSS转换配置</span><br><span class="line">│   │   └── fileTransform.js       # Jest中文件转换配置（如图片等）</span><br><span class="line">│   ├── modules.js                 # 用于配置Node模块</span><br><span class="line">│   ├── paths.js                   # 项目路径配置，例如源代码、构建输出目录等</span><br><span class="line">│   ├── webpack                    # 包含与Webpack相关的配置和工具</span><br><span class="line">│   │   └── persistentCache</span><br><span class="line">│   │       └── createEnvironmentHash.js  # 创建环境敏感的缓存散列</span><br><span class="line">│   ├── webpack.config.js          # Webpack的主要配置文件</span><br><span class="line">│   └── webpackDevServer.config.js # Webpack开发服务器配置</span><br><span class="line">├── package-lock.json              # 指定了项目依赖的确切版本，保证项目依赖一致性</span><br><span class="line">├── package.json                   # 项目的依赖、脚本和配置信息</span><br><span class="line">├── public                         # 公共文件，不会被Webpack处理</span><br><span class="line">│   ├── favicon.ico                # 网站图标</span><br><span class="line">│   └── index.html                 # 主HTML文件，React挂载点</span><br><span class="line">├── scripts                        # 包含构建和开发环境运行的Node脚本</span><br><span class="line">│   ├── build.js                   # 用于生产环境构建应用的脚本</span><br><span class="line">│   ├── start.js                   # 用于启动开发服务器的脚本</span><br><span class="line">│   └── test.js                    # 用于运行测试的脚本</span><br><span class="line">└── src                            # 源代码目录</span><br><span class="line">    └── index.js                   # 应用的入口文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置目录别名和开发环境Proxy代理"><a href="#配置目录别名和开发环境Proxy代理" class="headerlink" title="配置目录别名和开发环境Proxy代理"></a>配置目录别名和开发环境Proxy代理</h2><div class="card">目录别名</div>
+
+<p>打开<code>config/webpack.config.js</code>，找到<strong>resolve</strong>下的<strong>alias</strong>属性：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">resolve</span>: &#123;</span><br><span class="line">  <span class="attr">alias</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;@&#x27;</span>: path.<span class="title function_">resolve</span>(__dirname, paths.<span class="property">appSrc</span>),<span class="comment">// 指定@为src目录</span></span><br><span class="line">         ...configs</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="card">配置开发环境Proxy代理</div>
+
+<p>查看<code>config/webpackDevServer.config.js</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">onBeforeSetupMiddleware</span>(<span class="params">devServer</span>) &#123;</span><br><span class="line">  <span class="comment">// Keep `evalSourceMapMiddleware`</span></span><br><span class="line">  <span class="comment">// middlewares before `redirectServedPath` otherwise will not have any effect</span></span><br><span class="line">  <span class="comment">// This lets us fetch source contents from webpack for the error overlay</span></span><br><span class="line">  devServer.<span class="property">app</span>.<span class="title function_">use</span>(evalSourceMapMiddleware(devServer));</span><br><span class="line">	<span class="comment">// 有代理的情况下，导入代理配置</span></span><br><span class="line">  <span class="keyword">if</span> (fs.<span class="title function_">existsSync</span>(paths.<span class="property">proxySetup</span>)) &#123;</span><br><span class="line">    <span class="comment">// This registers user provided middleware for proxy reasons</span></span><br><span class="line">    <span class="built_in">require</span>(paths.<span class="property">proxySetup</span>)(devServer.<span class="property">app</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>查看<code>config/paths.js</code></p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">proxySetup</span>: <span class="title function_">resolveApp</span>(<span class="string">&#x27;src/setupProxy.js&#x27;</span>),</span><br><span class="line">  ...configs</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>可以看到代理配置默认指定在src目录下，建议跟着项目需要的路径创建配置文件</p>
+<p>配置<code>src/setupProxy.js</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Description: </span></span><br><span class="line"><span class="comment"> * @Author: xiuji</span></span><br><span class="line"><span class="comment"> * @Date: 2023-11-23 11:02:31</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2023-11-23 13:43:36</span></span><br><span class="line"><span class="comment"> * @LastEditors: Do not edit</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> &#123; createProxyMiddleware &#125; = <span class="built_in">require</span>(<span class="string">&#x27;http-proxy-middleware&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="keyword">function</span> (<span class="params">app</span>) &#123;</span><br><span class="line">    app.<span class="title function_">use</span>(</span><br><span class="line">        <span class="string">&#x27;/api&#x27;</span>,</span><br><span class="line">        <span class="title function_">createProxyMiddleware</span>(&#123;</span><br><span class="line">            <span class="attr">target</span>: <span class="string">&#x27;http://localhost:3001&#x27;</span>,</span><br><span class="line">            <span class="attr">changeOrigin</span>: <span class="literal">true</span>,</span><br><span class="line">            <span class="attr">pathRewrite</span>: &#123;</span><br><span class="line">                <span class="string">&#x27;^/api&#x27;</span>: <span class="string">&#x27;&#x27;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    );</span><br><span class="line">    <span class="comment">// 添加多个代理</span></span><br><span class="line">    <span class="comment">// app.use(</span></span><br><span class="line">    <span class="comment">//     &#x27;/api2&#x27;,</span></span><br><span class="line">    <span class="comment">//     createProxyMiddleware(&#123;</span></span><br><span class="line">    <span class="comment">//         target: &#x27;http://localhost:3002&#x27;,</span></span><br><span class="line">    <span class="comment">//         changeOrigin: true,</span></span><br><span class="line">    <span class="comment">//         pathRewrite: &#123;</span></span><br><span class="line">    <span class="comment">//             &#x27;^/api2&#x27;: &#x27;&#x27;</span></span><br><span class="line">    <span class="comment">//         &#125;</span></span><br><span class="line">    <span class="comment">//     &#125;)</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里是在Node.js环境下使用中间件<code>http-proxy-middleware</code>，用于创建代理，以便在开发环境中将特定的 API 请求转发到不同的后端服务。</p>
+<div class="ps">react eject后ESLint报错Using babel-preset-react-app requires NODE_ENV or BABEL_ENV</div>
+
+<p>这个错误可以通过更改<code>package.json</code>中的<code>eslintConfig</code>部分，屏蔽babel-preset-react-app，再开启<code>babel-preset-react-app/prod</code>可以解决这个问题。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;eslintConfig&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;extends&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;react-app&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;react-app/jest&quot;</span></span><br><span class="line">  <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;parserOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;babelOptions&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;presets&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">[</span></span><br><span class="line">          <span class="string">&quot;babel-preset-react-app&quot;</span><span class="punctuation">,</span></span><br><span class="line">          <span class="literal"><span class="keyword">false</span></span></span><br><span class="line">        <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">        <span class="string">&quot;babel-preset-react-app/prod&quot;</span></span><br><span class="line">      <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><h2 id="比较一下React和Vue"><a href="#比较一下React和Vue" class="headerlink" title="比较一下React和Vue"></a>比较一下React和Vue</h2><p>React 和 Vue 是目前前端领域非常流行的两个JavaScript库（React）和框架（Vue），它们各自采用了不同的架构模式：React 更接近于 MVC（Model-View-Controller）的变种，而 Vue 被认为遵循了 MVVM（Model-View-ViewModel）模式。下面分别描述它们的特点：</p>
+<blockquote>
+<p> <strong>React（接近于 MVC）</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>Model（模型）</strong>：在 React 中，状态（state）和属性（props）通常代表了模型。React 组件的状态可以被看作是模型，是数据的来源。</p>
+</li>
+<li><p><strong>View（视图）</strong>：React 的组件结构代表了视图层。它使用 JSX（一种JavaScript的扩展语法）来描述 UI，允许开发者以一种将标记与JavaScript逻辑相结合的方式来定义视图。</p>
+</li>
+<li><p><strong>Controller（控制器）</strong>：React 本身不明确区分控制器，但组件的生命周期方法和事件处理函数充当了控制器的角色，负责处理用户输入并更新模型（状态）。</p>
+</li>
+<li><p><strong>单向数据流</strong>：React 强调单向数据流，即数据有一个明确定义的流向。状态（或props）流入视图，视图通过事件流向控制器逻辑，控制器逻辑更新状态，并触发视图重新渲染。</p>
+</li>
+<li><p><strong>组件化</strong>：React的核心是可复用的组件，每个组件负责渲染一部分用户界面，并管理该部分的状态。</p>
+</li>
+</ol>
+<blockquote>
+<p> Vue（遵循 MVVM）</p>
+</blockquote>
+<ol>
+<li><p><strong>Model（模型）</strong>：在 Vue 中，数据对象（data）代表模型，是应用状态的声明式定义。</p>
+</li>
+<li><p><strong>View（视图）</strong>：模板（template）定义了如何将状态渲染到UI上，Vue的模板语法提供了声明式的将DOM绑定到底层数据的方法。</p>
+</li>
+<li><p><strong>ViewModel（视图模型）</strong>：Vue 实例扮演 ViewModel 的角色，它是一个 Vue 特有概念。ViewModel 是 View 和 Model 之间的桥梁，负责监听数据的变化并自动更新DOM，实现数据的双向绑定。</p>
+</li>
+<li><p><strong>双向数据绑定</strong>：Vue 通过v-model等指令提供了数据的双向绑定，使得数据的更新可以自动映射到界面，同时界面的变化也可以即时反馈到数据。</p>
+</li>
+<li><p><strong>响应式系统</strong>：Vue 的响应式系统可以自动追踪依赖关系，并在数据改变时执行更新，极大地简化了更新逻辑。</p>
+</li>
+</ol>
+<p>综上所述，React 和 Vue 的主要区别在于数据绑定和组件更新机制上。React 鼓励单向数据流和显示地通过状态变更来更新组件，而 Vue 的双向数据绑定和自动的依赖跟踪则让状态管理更加简单。此外，React 倾向于JavaScript中的函数式编程，Vue则更偏向于声明式的模板和配置。</p>
+<h2 id="React和Vue中的单向数据流概念"><a href="#React和Vue中的单向数据流概念" class="headerlink" title="React和Vue中的单向数据流概念"></a>React和Vue中的单向数据流概念</h2><p>React 和 Vue 都倡导使用单向数据流，但它们在实施这一概念的细节上有所不同。单向数据流是指在应用中数据有一个明确的流动方向，这样可以更容易地理解和追踪状态的变化，以及更容易地维护和调试代码。</p>
+<blockquote>
+<p><strong>React 中的单向数据流</strong></p>
+</blockquote>
+<p>在 React 中，单向数据流体现在父组件到子组件的数据传递和状态管理上。父组件通过 props 向子组件传递数据，子组件无法直接修改接收到的 props。当子组件需要更新状态时，它会调用从父组件传递下来的回调函数，然后父组件更新自身的状态，这个更新会以 props 的形式再次传递到子组件，从而引起子组件的重新渲染。</p>
+<p>这样，数据在组件之间的流动是单向的，状态的更新遵循一个清晰的路径，即：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">State -&gt; Render -&gt; Child Components -&gt; Callbacks -&gt; State</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p> <strong>Vue 中的单向数据流</strong></p>
+</blockquote>
+<p>Vue 也采用了单向数据流的概念，尽管它提供了双向数据绑定的便利（通过v-model指令）。在 Vue 中，父组件通过 props 向子组件传递数据，和 React 类似，子组件不应直接修改这些 props。如果子组件需要改变通过 props 接收到的值，它应该基于这个 prop 的值创建一个局部变量或者发出一个事件通知父组件进行修改。</p>
+<p>在 Vue 中，如果子组件需要通知父组件改变状态，它会发射（emit）一个事件，然后父组件在捕获这个事件后更新数据。这样的流程也保证了数据的单向流动：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Props -&gt; Child Components -&gt; Emit Event -&gt; Parent Data</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>总结</strong></p>
+</blockquote>
+<p>虽然 React 和 Vue 在实现上有所不同，React 更强调显式的状态管理和更新机制（函数式组件、Hooks、状态提升等），而 Vue 提供了更多的抽象和便利性（响应式系统、双向绑定），但两者共同遵循的单向数据流原则为开发者提供了一种清晰且可预测的方式来管理应用中的状态。在任何复杂的应用中，遵循单向数据流都能帮助开发者更好地追踪状态的变化，减少不可预期的错误。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.xiuji957.cn">Xiuji957</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.xiuji957.cn/2023/11/22/react/">https://www.xiuji957.cn/2023/11/22/react/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.xiuji957.cn" target="_blank">Xiuji957</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/React/">React</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://fastly.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/11/23/react1/"><img class="prev-cover" src="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">react1</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/26/node1/"><img class="next-cover" src="https://bu.dusays.com/2023/10/26/6539ff1a94067.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Node.js全局变量</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/11/23/react1/" title="react1"><img class="cover" src="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-23</div><div class="title">react1</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/dog.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xiuji957</div><div class="author-info__description">胆气自在此心间，也去忧来也无愁</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">62</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Terminator957"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://bu.dusays.com/2022/10/31/635f95ef6afb7.jpg" target="_blank" title="Wechat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="https://music.163.com/#/user/home?id=429392391" target="_blank" title="Music"><i class="fa-sharp fa-solid fa-music"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">文学，禅学及电脑维修</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AAReact%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">第一个React程序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AE%E4%BF%9D%E6%9C%89%E5%90%88%E9%80%82%E7%9A%84%E7%8E%AF%E5%A2%83"><span class="toc-number">1.1.</span> <span class="toc-text">确保有合适的环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAReact%E5%BA%94%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">创建React应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">构建生产环境应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AEWebpack"><span class="toc-number">2.</span> <span class="toc-text">自定义配置Webpack</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4package-json"><span class="toc-number">2.1.</span> <span class="toc-text">默认package.json</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%9B%AE%E5%BD%95%E5%88%AB%E5%90%8D%E5%92%8C%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83Proxy%E4%BB%A3%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">配置目录别名和开发环境Proxy代理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">3.</span> <span class="toc-text">最后</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%BE%83%E4%B8%80%E4%B8%8BReact%E5%92%8CVue"><span class="toc-number">3.1.</span> <span class="toc-text">比较一下React和Vue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#React%E5%92%8CVue%E4%B8%AD%E7%9A%84%E5%8D%95%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81%E6%A6%82%E5%BF%B5"><span class="toc-number">3.2.</span> <span class="toc-text">React和Vue中的单向数据流概念</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/11/23/react1/" title="react1"><img src="https://bu.dusays.com/2023/11/22/655dac50422e8.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="react1"/></a><div class="content"><a class="title" href="/2023/11/23/react1/" title="react1">react1</a><time datetime="2023-11-23T09:39:44.837Z" title="更新于 2023-11-23 17:39:44">2023-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/14/Promise/" title="Promise"><img src="https://bu.dusays.com/2022/11/16/6374528071f3b.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Promise"/></a><div class="content"><a class="title" href="/2022/11/14/Promise/" title="Promise">Promise</a><time datetime="2023-11-23T08:52:13.056Z" title="更新于 2023-11-23 16:52:13">2023-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/09/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F/" title="深入浅出发布-订阅模式"><img src="https://bu.dusays.com/2022/11/16/6374528071f3b.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深入浅出发布-订阅模式"/></a><div class="content"><a class="title" href="/2022/11/09/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F/" title="深入浅出发布-订阅模式">深入浅出发布-订阅模式</a><time datetime="2023-11-23T08:51:57.267Z" title="更新于 2023-11-23 16:51:57">2023-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/01/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" title="深入浅出观察者模式"><img src="https://bu.dusays.com/2022/11/16/6374528071f3b.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="深入浅出观察者模式"/></a><div class="content"><a class="title" href="/2022/11/01/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" title="深入浅出观察者模式">深入浅出观察者模式</a><time datetime="2023-11-23T08:51:50.891Z" title="更新于 2023-11-23 16:51:50">2023-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/27/loop%E5%92%8Cnextick/" title="loop和nextick"><img src="/img/vue3.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="loop和nextick"/></a><div class="content"><a class="title" href="/2022/12/27/loop%E5%92%8Cnextick/" title="loop和nextick">loop和nextick</a><time datetime="2023-11-23T08:51:29.123Z" title="更新于 2023-11-23 16:51:29">2023-11-23</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://bu.dusays.com/2023/11/22/655dabe2e64ac.jpeg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Xiuji957</div><div class="footer_custom_text">Genius only means hard-working all one's life.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a><br><a href="https://beian.miit.gov.cn/" target="_blank">豫ICP备2022021961号-1</a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas id="universe"></canvas><script defer src="/js/jquery-3.5.1.min.js"></script><script defer src="/js/universe.js"></script><script id="click-show-text" src="https://fastly.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
